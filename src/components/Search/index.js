@@ -8,7 +8,7 @@ const Search = () => {
   const dispatch = useDispatch();
   const handleSearch = () => {
     setError(false);
-    dispatch(addDigimonsThunk(input));
+    dispatch(addDigimonsThunk(input.toLowerCase()));
     setInput("");
   };
 
